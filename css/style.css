@@ -1,0 +1,316 @@
+body{
+    color:#212529;
+}
+/* background in the beginning */
+.firstSection {    
+    background-image: -webkit-linear-gradient(20deg, #fcfcfc 50%, #c5c4c9 50%);
+    height: auto;    
+  }
+
+/* Navigation */
+  nav{
+    font-size:120%;
+    padding-top: 30px;
+    position: relative;
+    top: 5%;
+    right: 30%;    
+    text-align:right;
+    
+  }
+
+  nav a{
+      padding-left:2rem;
+      text-decoration:none;
+      color:#212529;
+      font-weight: bolder;
+      transition: color 0.3s;
+  }
+
+  nav a:visited{
+      text-decoration: none;
+  }
+
+  nav a:hover{
+    color:white;
+    text-decoration: underline;
+  }
+
+ /* start 1st Section - welcome  */ 
+  .welcome{
+      margin-top:100px;
+      text-align:center;
+  }
+
+  .welcomeLeft{
+    position: relative;
+    top:200px;
+
+  }
+
+  .welcomeLeft h1{
+      padding-bottom: 1rem;
+  }
+
+  .welcomeLeft button{
+      margin-top:1.5rem;
+      margin-left: 10px;
+  }
+
+  .thisIsMePic{
+        
+    width: 80%;
+    margin-top:-50px;
+    text-align:left;
+    margin-left:-400px;
+    height: auto;
+      
+  }
+
+  .socialMedia{
+      margin: 40px 0px 0px 40px;
+      padding: 0px;
+      width:65px;
+      text-align: center;
+      font-size: 200%;
+      list-style-type: none;    
+      color: #212529;
+      border: 1px solid #6b6b6b;
+      border-radius: 20px;
+      position: relative;
+      top:-200px;
+      
+  }
+
+
+
+.fa-facebook{
+    transition: all 0.5s;
+    transition-property: color, font-size;
+    
+}
+  
+.fa-facebook:hover{
+    color: #4267B2;
+    font-size:120%;
+    
+}
+
+
+.fa-instagram{
+    transition: all 0.5s;
+    transition-property: color, font-size;
+
+}
+
+.fa-instagram:hover{
+    color: #C13584;
+    font-size: 120%;
+}
+
+.fa-linkedin-in{
+    transition: all 0.5s;
+    transition-property: color, font-size;
+    
+}
+
+.fa-linkedin-in:hover{
+    color:#2867B2;
+    font-size: 120%;
+}
+
+
+ /* start 2nd Section - about me */ 
+
+.aboutMeSection{
+    padding:100px;
+    padding-bottom: 40px;
+    background-color:#f3f3f3;
+    margin: 0 auto;
+   
+}
+
+ .aboutMeLeft{
+    margin-top:-60px;
+    text-align:center;
+    
+    padding-top:0px;
+    font-size: 1250%;
+    color: #c8c7c7;
+ }
+
+ /* start 3rd Section - Education */
+
+ .educationSection{
+    padding:100px;
+    padding-bottom: 40px;
+    background-color:#fcfcfc;
+    margin: 0 auto;
+   
+}
+
+ .educationRight{
+    margin-top:-60px;
+    text-align:center;
+    
+    padding-top:0px;
+    font-size: 1250%;
+    color: #c8c7c7;
+ }
+
+ .educationLeft{
+           
+    padding-left: 250px;
+ }
+
+ /*start 4th Section - Workexperience */
+
+ .timelineSection{
+     padding-bottom:80px;
+ }
+
+ .timelineSectionHeader{
+     text-align:center;
+     padding-top: 100px;
+     padding-bottom: 40px;
+ }
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f3f3f3;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timelines {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timelines::after {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: -13px;
+    background-color: #c5c4c9;
+    border: 1px solid #c8c7c7;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -13px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    transition: all 1s;
+    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+  }
+
+     .timeline button{
+      padding: 5px 30px;      
+  } 
+
+
+  .skillsSection{
+      background-color: #6c757d;
+      color:white;
+      padding-bottom:80px;
+    
+  }
+
+  .skills{
+      padding-top: 100px;
+      text-align: center;
+  }
+
+  .skills h1{
+      padding-bottom:40px;
+  }
+
+  .skills p{
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+  }
+
+.skills i{
+    font-size:500%;
+    
+}
