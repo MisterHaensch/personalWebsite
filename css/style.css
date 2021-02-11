@@ -3,8 +3,11 @@ body{
 }
 /* background in the beginning */
 .firstSection {    
-    background-image: -webkit-linear-gradient(20deg, #fcfcfc 50%, #c5c4c9 50%);
-    height: auto;    
+    /*  background-image: -webkit-linear-gradient(20deg, #fcfcfc 50%, #c5c4c9 50%); height: auto;   */
+   background-image: url("../img/backgroundHeader2.jpg");
+   background-size: cover;
+   background-position: 50% 33%;
+    height: 700px; 
   }
 
 /* Navigation */
@@ -13,7 +16,7 @@ body{
     padding-top: 30px;
     position: relative;
     top: 5%;
-    right: 30%;    
+    right: 10%;    
     text-align:right;
     
   }
@@ -21,7 +24,7 @@ body{
   nav a{
       padding-left:2rem;
       text-decoration:none;
-      color:#212529;
+      color:white;
       font-weight: bolder;
       transition: color 0.3s;
   }
@@ -42,8 +45,8 @@ body{
   }
 
   .welcomeLeft{
-    position: relative;
-    top:200px;
+      margin-top: 20px;
+    color:white;
 
   }
 
@@ -54,32 +57,49 @@ body{
   .welcomeLeft button{
       margin-top:1.5rem;
       margin-left: 10px;
+      width:150px;
   }
 
-  .thisIsMePic{
-        
-    width: 80%;
-    margin-top:-50px;
-    text-align:left;
-    margin-left:-400px;
-    height: auto;
+  .thisIsMe{
+    height: 200px;
+    width: auto;
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 50%;
+    border: 2px solid grey;
+    
+    
+    
       
   }
 
   .socialMedia{
-      margin: 40px 0px 0px 40px;
-      padding: 0px;
-      width:65px;
-      text-align: center;
-      font-size: 200%;
-      list-style-type: none;    
-      color: #212529;
-      border: 1px solid #6b6b6b;
-      border-radius: 20px;
-      position: relative;
-      top:-200px;
+      
+      margin-top:80px;
       
   }
+
+
+
+  .socialMedia li{
+      color: white;
+      font-size: 200%;
+      list-style:none;
+      
+      float:right;
+      margin-left:15px;
+
+    
+     
+      
+
+      
+           
+  }
+
+  .socialMedia li:first-child{
+      margin-right:10%;
+  }
+
 
 
 
