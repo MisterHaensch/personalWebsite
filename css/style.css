@@ -74,7 +74,7 @@ body{
 
   .socialMedia{
       
-      margin-top:80px;
+      margin-top:30px;
       
   }
 
@@ -86,7 +86,7 @@ body{
       list-style:none;
       
       float:right;
-      margin-left:15px;
+      margin-left:20px;
 
     
      
@@ -139,7 +139,33 @@ body{
 }
 
 
- /* start 2nd Section - about me */ 
+ /* start 2nd Section - about me */
+ 
+ .aboutAndInfosSection{
+     padding: 60px 0px;
+     background-color:white;
+     
+
+ }
+
+ .aboutAndInfosSection .container{
+    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    padding: 2rem;
+    border-radius:10px;
+    
+ }
+
+ .aboutAndInfosLeft{
+     padding-right:50px;
+     line-height: 1.8rem;
+ }
+
+ .aboutAndInfosRight{
+     line-height: 2rem;
+     padding-left:50px;
+ }
 
 .aboutMeSection{
     padding:100px;
