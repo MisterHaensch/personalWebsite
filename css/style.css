@@ -399,7 +399,24 @@ font-size: 200%;
 
  /* reviewSection */
  .reviewsSection{
-
+    background: white;
+    padding-top: 100px;
+    text-align:center;
     
+
+ }
+
+ .reviewsSection .row{
+    margin-top:40px;
+    padding-bottom: 80px;
+
+ }
+ .reviewsSection .card{
+    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+     margin: auto;
+     border-radius:10px;
+
  }
 
