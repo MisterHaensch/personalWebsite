@@ -364,29 +364,42 @@ body{
   } 
 
 
-  .skillsSection{
-      background-color: #6c757d;
-      color:white;
-      padding-bottom:80px;
-    
-  }
+/* skillsection */
 
-  .skills{
-      padding-top: 100px;
-      text-align: center;
-  }
-
-  .skills h1{
-      padding-bottom:40px;
-  }
-
-  .skills p{
-      font-size: 1.5rem;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
-  }
-
-.skills i{
-    font-size:500%;
-    
+.skillSection{
+    background-color: white;
+    padding: 50px 0px; 
+     
 }
+
+.skillSection .container{
+    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    padding: 2rem;
+    border-radius:10px;
+    
+ }
+
+ .skillSection .container i{
+font-size: 200%;
+ }
+
+ #php {
+     font-size: 75%;
+
+ }
+ #sql{
+     font-size:smaller;
+ }
+
+ .col-lg-7{
+     padding:0px;
+ }
+
+ /* reviewSection */
+ .reviewsSection{
+
+    
+ }
+
