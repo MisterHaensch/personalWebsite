@@ -17,8 +17,7 @@ body{
     position: relative;
     top: 5%;
     right: 10%;    
-    text-align:right;
-    
+    text-align:right;    
   }
 
   nav a{
@@ -47,7 +46,6 @@ body{
   .welcomeLeft{
       margin-top: 20px;
     color:white;
-
   }
 
   .welcomeLeft h1{
@@ -60,8 +58,7 @@ body{
       width:150px;
   }
 
-  .blurBackground{
-        
+  .blurBackground{        
       text-align:center;
       padding:40px;
       width:500px;
@@ -71,8 +68,7 @@ body{
       border-radius: 10px;
       -webkit-box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
       -moz-box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
-      box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
-      
+      box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);     
       
   }
 
@@ -82,61 +78,41 @@ body{
     background-color:rgba(0,0,0,0.4);
     border-radius: 50%;
     border: 2px solid grey;
-    filter:blur(0px)
-    
-    
-      
-  }
+    filter:blur(0px)   
+ }
 
-  .socialMedia{
-      
+  .socialMedia{      
       position: absolute;
-      margin-top: 450px;
-      
+      margin-top: 450px;      
   }
-
 
 
   .socialMedia li{
       color: white;
       font-size: 200%;
-      list-style:none;
-      
+      list-style:none;      
       float:right;
       margin-left:20px;
-
-    
-     
-      
-
-      
-           
-  }
+}
 
   .socialMedia li:first-child{
       margin-right:10%;
   }
 
-
-
-
 .fa-facebook{
     transition: all 0.5s;
     transition-property: color, font-size;
-    
-}
+    }
   
 .fa-facebook:hover{
     color: #4267B2;
     font-size:120%;
-    
-}
+  }
 
 
 .fa-instagram{
     transition: all 0.5s;
     transition-property: color, font-size;
-
 }
 
 .fa-instagram:hover{
@@ -147,8 +123,7 @@ body{
 .fa-linkedin-in{
     transition: all 0.5s;
     transition-property: color, font-size;
-    
-}
+ }
 
 .fa-linkedin-in:hover{
     color:#2867B2;
@@ -161,9 +136,7 @@ body{
  .aboutAndInfosSection{
      padding: 60px 0px;
      background-color:white;
-     
-
- }
+}
 
  .aboutAndInfosSection .container{
     -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
@@ -171,8 +144,7 @@ body{
     box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
     padding: 2rem;
     border-radius:10px;
-    
- }
+}
 
  .aboutAndInfosLeft{
      padding-right:50px;
@@ -189,13 +161,11 @@ body{
     padding-bottom: 40px;
     background-color:#f3f3f3;
     margin: 0 auto;
-   
 }
 
  .aboutMeLeft{
     margin-top:-60px;
-    text-align:center;
-    
+    text-align:center;    
     padding-top:0px;
     font-size: 1250%;
     color: #c8c7c7;
@@ -213,8 +183,7 @@ body{
     -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
     box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
     padding: 2rem;
-    border-radius:10px;
-    
+    border-radius:10px;    
  }
 
  .educationLeft{
@@ -225,15 +194,13 @@ body{
  .educationRight{
     text-align:center;
     font-size:1000%;
-
  }
 
  .educationSection{
     padding:100px;
     padding-bottom: 40px;
     background-color:#fcfcfc;
-    margin: 0 auto;
-   
+    margin: 0 auto;   
 }
 
 
@@ -293,8 +260,7 @@ body{
     width: 26px;
     height: 26px;
     right: -13px;
-    background-color: white;
-    
+    background-color: white;    
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -387,7 +353,6 @@ font-size: 200%;
 
  #php {
      font-size: 75%;
-
  }
  #sql{
      font-size:smaller;
@@ -401,22 +366,28 @@ font-size: 200%;
  .reviewsSection{
     background: white;
     padding-top: 100px;
-    text-align:center;
-    
-
+    text-align:center;    
  }
 
  .reviewsSection .row{
     margin-top:40px;
     padding-bottom: 80px;
-
  }
+
  .reviewsSection .card{
     -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
     -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
     box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
      margin: auto;
      border-radius:10px;
-
  }
+ 
+ .reviewsSection img{
+     border-radius:50%;
+     border: 1px solid darkgrey;
+     height:50%;
+     width:50%;
+     margin: 20px auto;
+ }
+
 
