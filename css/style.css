@@ -14,7 +14,7 @@ body{
     position:fixed;
     right:30px;
     bottom: 0;
-    font-size:80px;
+    font-size:70px;
     color: rgb(163, 163, 163);
     cursor: pointer;
     z-index:1000;
@@ -25,16 +25,21 @@ body{
       right: 20px;
       bottom: 100px;
       width: 400px;
-      height: 75vh;
+      height: 70vh;
       background: #dedede;
       z-index: 1000;
       transition: all 0.3s ease-out;
-      transform:scaleX(1);
+      transform:scaleX(0);
   }
   .chatBox.active{
-      transform: scaleX(0);
+      transform: scaleX(1);
   }
 
+  .conv-form-wrapper textarea{
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+  }
 
 
   .hidden{

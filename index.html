@@ -29,16 +29,33 @@
     <div class="chatBox">
         <div class="conv-form-wrapper">
             <form action="" method="GET" class="hidden">
-                <select name="programmer" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                <select name="welcome" data-conv-question="Hi, I'm Smartin. Welcome to Martins Website. Do you want to hire Martin?">
                     <option value="yes">Yes</option>
-                    <option value="no">No</option>
+                    <option value="no">Convince me</option>
                 </select>
-                <div data-conv-fork="programmer">
+                <div data-conv-fork="welcome">
                     <div data-conv-case="yes">
-                         <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                        <select name="timetable" data-conv-question="Wuhuuuu... best decision ever! I'm so excited... shall I arrange an appointment? I can have a look at his timetable.">
+                            <option value="yes">Yes, please</option>
+                            <option value="no">I'll conatct him, but thanks.</option>
+                        </select>                         
                     </div>
                     <div data-conv-case="no">
-                        <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                        <select name="thought" data-conv-question="okay okay... sure. Should I tell you some fun facts about Martin?">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div data-conv-fork="welcome">
+                    <div data-conv-case="yes">
+                        <select name="hire" data-conv-question="Wuhuuuu... best decision ever! I'm so excited... shall I arrange an appointment? I can have a look at his timetable.">
+                            <option value="yes">Yes</option>
+                            <option value="no">Not convi n ced yet</option>
+                        </select>                         
+                    </div>
+                    <div data-conv-case="no">
+                        <select name="thought" data-conv-question="okay okay... sure. Nobody wants to hire an unknown person. Have you seen his incredible workexperience?">
                             <option value="yes">Yes</option>
                             <option value="no">No..</option>
                         </select>
