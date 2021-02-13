@@ -7,15 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">    
     <script src="https://kit.fontawesome.com/9eafacdc36.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/chatbot.js"></script>
+    <link rel="stylesheet" href="css/jquery.convform.css">
+    <script src="js/jquery.convform.js"></script>
     <title>Martins Website</title>
 </head>
 
 <body>
 
+    <!-- chatbot begin--> 
+
+
+    <div class="chatIcon">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <div class="chatBox">
+        <div class="conv-form-wrapper">
+            <form action="" method="GET" class="hidden">
+                <select name="programmer" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <div data-conv-fork="programmer">
+                    <div data-conv-case="yes">
+                         <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                    </div>
+                    <div data-conv-case="no">
+                        <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                            <option value="yes">Yes</option>
+                            <option value="no">No..</option>
+                        </select>
+                    </div>
+                </div>    
+            </form>
+        </div>
+    </div>
+
+
+    <!-- chatbot end -->
 
 
     <section class="container-fluid firstSection">

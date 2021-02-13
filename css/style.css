@@ -10,6 +10,41 @@ body{
     height: 700px; 
   }
 
+  .chatIcon{
+    position:fixed;
+    right:30px;
+    bottom: 0;
+    font-size:80px;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+    z-index:1000;
+  }
+
+  .chatBox{
+      position: fixed;
+      right: 20px;
+      bottom: 100px;
+      width: 400px;
+      height: 75vh;
+      background: #dedede;
+      z-index: 1000;
+      transition: all 0.3s ease-out;
+      transform:scaleX(1);
+  }
+  .chatBox.active{
+      transform: scaleX(0);
+  }
+
+
+
+  .hidden{
+      display: none !important;
+  }
+
+  #messages{
+      padding:20px;
+  }
+
 /* Navigation */
   nav{
     font-size:120%;
