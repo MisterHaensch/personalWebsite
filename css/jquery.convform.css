@@ -239,6 +239,7 @@ div.conv-form-wrapper  div.message.ready {
     transform-origin: 0 0 0;
 }
 div.conv-form-wrapper  div#messages div.message {
+    
     border-radius: 20px;
     padding: 12px 22px;
     font-size: 0.905rem;
@@ -247,7 +248,7 @@ div.conv-form-wrapper  div#messages div.message {
     padding: 10px 15px 8px;
     border-radius: 20px;
     margin-bottom: 5px;
-    float: right;
+    float:right;
     clear: both;
     max-width: 65%;
     word-wrap: break-word;
