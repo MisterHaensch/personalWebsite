@@ -29,7 +29,10 @@
     <div class="chatBox">
         <div class="conv-form-wrapper">
             <form action="" method="GET" class="hidden">
-                <select name="welcome" data-conv-question="Hi, I'm Smartin. Welcome to Martins Website. Do you want to hire Martin?">
+                <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first." data-no-answer="true">
+                <select name="welcome" data-conv-question="Hi, I am Smartin, Martins bot! I am here to answer your questions about Martin! (Also, I'll be glad when he finally gets a job and leaves me alone. He became really annoying lately).
+                So, you made it to Martin’s website! Dyou want to hire Martin?">
+                
                     <option value="yes">Yes</option>
                     <option value="no">Convince me</option>
                 </select>
@@ -89,8 +92,12 @@
                         <h2>Hi, <br> I'm Martin</h2>
                         <h4>Engineer & Software Developer from Germany</h4>
 
-                        <button type="button" class="btn btn-light">Hire me</button>
-                        <button type="button" class="btn btn-light">Download CV</button>
+                        <button type="button" class="btn btn-light"><a href="mailto:hireme@mhansch.com?subject=Time to chat&body=Hi Martin <br>, I just came %0D%0A across your Website and want to talk with you about an opportunity. My number is:PHONENUMBER Best, ">
+                            Contact me
+                            </a></button>
+                        <button type="button" class="btn btn-light"><a href="martinhaenschcv.pdf" target="_blank" download>
+                            Download CV
+                          </a></button>
                     </div>
                 </div>
             </div>
@@ -495,17 +502,17 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="img/mutti.png" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                        
+                          <h5 class="card-title">Mother</h5>
+                          <p class="card-text">Martin has often repaired the internet in our house.</p>                        
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="img/sister.png" alt="Card image cap">
+                        <img class="card-img-top" src="img/bestfriend.png" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>                        
+                          <h5 class="card-title">Best friend</h5>
+                          <p class="card-text">Martin, is this really necessary at 2 a.m.?!</p>                        
                         </div>
                     </div>
                 </div>
@@ -513,8 +520,8 @@
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="img/wife.png" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Wife</h5>
+                          <p class="card-text">Are you still working on your website? Go and get some fresh air and take the trash out.</p>
                         </div>
                     </div>
                 </div>

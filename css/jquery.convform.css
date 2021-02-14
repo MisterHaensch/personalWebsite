@@ -254,7 +254,7 @@ div.conv-form-wrapper  div#messages div.message {
     word-wrap: break-word;
 }
 div.conv-form-wrapper  div#messages div.message.to {
-    background: #efefef;
+    background: white;
     color: #6f6f6f;
     float: left;
     border-top-left-radius: 0;
