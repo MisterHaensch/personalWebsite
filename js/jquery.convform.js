@@ -102,6 +102,7 @@ ConvState.prototype.printQuestion = function(){
                     $(this.wrapper).find('#messages').append(messageObj);
                     this.scrollDown();
                     this.printQuestion();
+                    //Change the time, the robot answers
                 }.bind(this),200);
             } else {
                 this.parameters.eventList.onSubmitForm(this);
