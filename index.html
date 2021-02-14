@@ -29,41 +29,104 @@
     <div class="chatBox">
         <div class="conv-form-wrapper">
             <form action="" method="GET" class="hidden">
-                <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first." data-no-answer="true">
-                <select name="welcome" data-conv-question="Hi, I am Smartin, Martins bot! I am here to answer your questions about Martin! (Also, I'll be glad when he finally gets a job and leaves me alone. He became really annoying lately).
-                So, you made it to Martin’s website! Dyou want to hire Martin?">
-                
-                    <option value="yes">Yes</option>
-                    <option value="no">Convince me</option>
+                <input type="text" name="name" data-conv-question="Hi, I am Smartin, Martins application assistant!" data-no-answer="true">
+                <input type="text" name="name" data-conv-question="I am here to answer your questions about Martin!" data-no-answer="true">
+                <input type="text" name="name" data-conv-question="Also, I'll be glad when he finally gets a job and leaves me alone. He became really annoying lately. " data-no-answer="true">
+                <select name="welcome" data-conv-question="So, you made it to Martin’s website! Do you want to hire Martin?">
+                    <option value="yes"> Yes, immediately</option>
+                    <option value="no">No, I need more information</option>
                 </select>
                 <div data-conv-fork="welcome">
                     <div data-conv-case="yes">
-                        <select name="timetable" data-conv-question="Wuhuuuu... best decision ever! I'm so excited... shall I arrange an appointment? I can have a look at his timetable.">
-                            <option value="yes">Yes, please</option>
-                            <option value="no">I'll conatct him, but thanks.</option>
-                        </select>                         
+                        <input type="text" name="name" data-conv-question="Wuhuuu....Fantastic decision, you made a great catch!" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="I've deleted all of his appointments in the next week, so he is free for you. " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Just send him a short email." data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="It's been great to talk. <3">                    
                     </div>
                     <div data-conv-case="no">
-                        <select name="thought" data-conv-question="okay okay... sure. Should I tell you some fun facts about Martin?">
+                        <select name="funfactquestion" data-conv-question="You are not convinced yet? No problem! How about some fun facts about Martin?">
                             <option value="yes">Yes</option>
                             <option value="no">No</option>
                         </select>
                     </div>
+
                 </div>
-                <div data-conv-fork="welcome">
+                <div data-conv-fork="funfactquestion">                    
                     <div data-conv-case="yes">
-                        <select name="hire" data-conv-question="Wuhuuuu... best decision ever! I'm so excited... shall I arrange an appointment? I can have a look at his timetable.">
-                            <option value="yes">Yes</option>
-                            <option value="no">Not convi n ced yet</option>
-                        </select>                         
-                    </div>
-                    <div data-conv-case="no">
-                        <select name="thought" data-conv-question="okay okay... sure. Nobody wants to hire an unknown person. Have you seen his incredible workexperience?">
-                            <option value="yes">Yes</option>
-                            <option value="no">No..</option>
+                        <input type="text" name="name" data-conv-question="Okay! " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Great! Let’s see..oh yeah, how about this:" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="although Martin is German, he sometimes laughs. Well, not too much, but a little. Ain't no fun in Germany. <3" data-no-answer="true">     
+                        <select name="funfactquestion2" data-conv-question="Are you convinced now?">
+                            <option value="yes">Yes, immediately</option>
+                            <option value="no">No, tell me more</option>
                         </select>
                     </div>
-                </div>    
+                    <div data-conv-case="no">
+                        <input type="text" name="name" data-conv-question="Okay! There is no hope for Martin. I'm going back into my void" >
+                    </div>
+                </div>
+
+                <div data-conv-fork="funfactquestion2">                    
+                    <div data-conv-case="yes">
+                        <input type="text" name="name" data-conv-question="Wuhuuu....Fantastic decision, you made a great catch!" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="I've deleted all of his appointments in the next week, so he is free for you. " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Just send him a short email." data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="It's been great to talk. <3">                    
+                    </div>
+                    <div data-conv-case="no">
+                        <input type="text" name="name" data-conv-question="Oh hmm, okay... " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Did you know that Martin is a hobby baker?" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="He can make bread for your team! If that's not a reason to hire him, I don't know what is!" data-no-answer="true">     
+                        <select name="funfactquestion3" data-conv-question="Are you convinced now?">
+                            <option value="yes">Yes, totally</option>
+                            <option value="no">No, tell me more</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div data-conv-fork="funfactquestion3">                    
+                    <div data-conv-case="yes">
+                        <input type="text" name="name" data-conv-question="Wuhuuu....Fantastic decision, you made a great catch!" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="I've deleted all of his appointments in the next week, so he is free for you. " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Just send him a short email." data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="It's been great to talk. <3">                    
+                    </div>
+                    <div data-conv-case="no">
+                        <input type="text" name="name" data-conv-question="Wow, you are critical" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Okay...well, what else...oh wait, he can do magic tricks!" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Yeah, he's okay-good at that. Well, most of the time something goes wrong..but with him you can pass the lunch break quite good!" data-no-answer="true">     
+                        <select name="funfactquestion4" data-conv-question="Are you convinced now? (Please)">
+                            <option value="yes">Yes, totally</option>
+                            <option value="no">No, tell me more</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div data-conv-fork="funfactquestion4">                    
+                    <div data-conv-case="yes">
+                        <input type="text" name="name" data-conv-question="Wuhuuu....Fantastic decision, you made a great catch!" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="I've deleted all of his appointments in the next week, so he is free for you. " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="It's been great to talk. <3">                    
+                    </div>
+                    <div data-conv-case="no">
+                        <input type="text" name="name" data-conv-question="Oh come on!! " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Look at his fantastic resume, look at his impressive work experience and amazing skills.." data-no-answer="true">
+                          
+                        <select name="end" data-conv-question="I mean, LOOK AT IT! How can you not want to hire him?!">
+                            <option value="yes">Yes, you are right</option>                            
+                        </select>
+                    </div>
+                </div>
+                <div data-conv-fork="end">                    
+                    <div data-conv-case="yes">
+                        <input type="text" name="name" data-conv-question="I knew it. Let me just quickly delete all his schedule for this week" data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="Done... he is now completly free for you " data-no-answer="true">
+                        <input type="text" name="name" data-conv-question="It's been great to talk. <3">                    
+                    </div>
+                    
+                </div>
+                
+
             </form>
         </div>
     </div>
