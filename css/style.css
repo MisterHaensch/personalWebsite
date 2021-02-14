@@ -68,6 +68,20 @@ body{
       transition: color 0.3s;
   }
 
+  a{
+      color:black;
+      text-decoration: none;
+
+  }
+
+  a:visited{
+      text-decoration:none;
+  }
+
+  a:hover{
+      color:black;
+  }
+
   nav a:visited{
       text-decoration: none;
   }
