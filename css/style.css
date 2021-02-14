@@ -18,6 +18,7 @@ body{
     color: rgb(163, 163, 163);
     cursor: pointer;
     z-index:1000;
+    
   }
 
   .chatBox{
@@ -135,23 +136,18 @@ body{
     filter:blur(0px)   
  }
 
-  .socialMedia{      
-      position: absolute;
-      margin-top: 450px;      
-  }
+
 
 
   .socialMedia li{
       color: white;
       font-size: 200%;
       list-style:none;      
-      float:right;
-      margin-left:20px;
-}
-
-  .socialMedia li:first-child{
-      margin-right:10%;
+      
+      
   }
+
+
 
 .fa-facebook{
     transition: all 0.5s;
@@ -423,6 +419,10 @@ font-size: 200%;
     text-align:center;    
  }
 
+ .reviewsSection h2{
+     text-align:left;
+ }
+
  .reviewsSection .row{
     margin-top:40px;
     padding-bottom: 80px;
@@ -444,4 +444,50 @@ font-size: 200%;
      margin: 20px auto;
  }
 
+
+ .hobbiesSection{
+    background: white;
+    padding: 50px 0px;
+    text-align:center;
+
+ }
+
+ #hobbies{
+    text-align:left;
+    margin-bottom:30px;
+    
+ }
+
+ .hobbiesSection .container{
+    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    padding: 2rem;
+    border-radius:10px;
+ }
+
+ .contactSection{
+    color:white;
+    padding:50px 0px;
+    background: rgb(255,125,182);
+    background: radial-gradient(circle, rgba(255,125,182,1) 0%, rgba(148,187,233,1) 100%);
+ }
+
+ .contactSection h2{
+    text-align:center;
+    
+    
+ }
+
+ .socialMediaInner{
+    margin-top:40px;
+     text-align:center;
+ }
+
+
+ .contactSection li{
+     display:inline;
+     padding: 20px;
+
+ }
 
