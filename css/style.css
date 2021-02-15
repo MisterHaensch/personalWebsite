@@ -1,5 +1,6 @@
 body{
-    color:#212529;
+    
+    color:#48494b;
 }
 /* background in the beginning */
 .firstSection {    
@@ -47,7 +48,7 @@ body{
       right: 20px;
       bottom: 100px;
       width: 400px;
-      height: 70vh;
+      height: 68vh;
       background: #dedede;
       z-index: 1000;
       transition: all 0.3s ease-out;
