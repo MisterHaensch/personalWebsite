@@ -103,7 +103,7 @@ ConvState.prototype.printQuestion = function(){
                     this.scrollDown();
                     this.printQuestion();
                     //Change the time, the robot answers
-                }.bind(this),200);
+                }.bind(this),2000);
             } else {
                 this.parameters.eventList.onSubmitForm(this);
             }

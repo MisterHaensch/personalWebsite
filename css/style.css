@@ -18,8 +18,29 @@ body{
     color: rgb(163, 163, 163);
     cursor: pointer;
     z-index:1000;
+    border-radius: 50%;
+    
+    
     
   }
+
+  #hidden{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+        animation-name: bounce-4;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-4 {
+        0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-50px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        57%  { transform: scale(1,1)    translateY(-7px); }
+        64%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+    }
+	
+
 
   .chatBox{
       position: fixed;
@@ -52,6 +73,8 @@ body{
   }
 
 /* Navigation */
+
+
   nav{
     font-size:120%;
     padding-top: 30px;
@@ -434,13 +457,18 @@ font-size: 200%;
     box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
      margin: auto;
      border-radius:10px;
+     height:421px
  }
+
+
+
  
  .reviewsSection img{
-     border-radius:50%;
+     
      border: 1px solid darkgrey;
-     height:50%;
-     width:50%;
+     border-radius:50%;
+     width:70%;
+     height: auto;
      margin: 20px auto;
  }
 
