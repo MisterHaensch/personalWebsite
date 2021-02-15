@@ -163,19 +163,37 @@ body{
 
 
   .socialMedia li{
-      color: white;
+      
       font-size: 200%;
       list-style:none;      
       
       
   }
 
+  .socialMedia a{
+    color: white;
+      
+    
+    
+}
 
+.fa-envelope{
+        transition: all 0.5s;
+        transition-property: font-size;
+    }
+
+    .fa-envelope:hover{
+        font-size:120%;
+      }
 
 .fa-facebook{
     transition: all 0.5s;
     transition-property: color, font-size;
     }
+
+    
+
+
   
 .fa-facebook:hover{
     color: #4267B2;
