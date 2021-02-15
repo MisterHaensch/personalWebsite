@@ -78,11 +78,16 @@ body{
   nav{
     font-size:120%;
     padding-top: 30px;
-    position: relative;
-    top: 5%;
+    position: absolute;
+    top: 3%;
     right: 10%;    
     text-align:right;    
   }
+
+/*   .fixed {
+    position:fixed;
+    z-index:1000;
+} */
 
   nav a{
       padding-left:2rem;
@@ -117,7 +122,7 @@ body{
 
  /* start 1st Section - welcome  */ 
   .welcome{
-      margin-top:80px;
+      
       text-align:center;
   }
 
@@ -136,7 +141,8 @@ body{
       width:150px;
   }
 
-  .blurBackground{        
+  .blurBackground{     
+      margin-top:125px;   
       text-align:center;
       padding:40px;
       width:500px;
@@ -297,6 +303,10 @@ body{
 
 
  /*start 4th Section - Workexperience */
+
+ .content li{
+     padding-top:10px;
+ }
 
  .timelineSection{
      padding-bottom:80px;
