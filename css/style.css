@@ -76,19 +76,47 @@ body{
 /* Navigation */
 
 
-  nav{
-    font-size:120%;
-    padding-top: 30px;
-    position: absolute;
-    top: 3%;
-    right: 10%;    
-    text-align:right;    
-  }
+
 
 /*   .fixed {
     position:fixed;
     z-index:1000;
 } */
+
+.navbar {
+    font-size:120%;
+    color: darkgrey !important;
+   /*  background-color: rgba(255,255,255,0.7) !important; */
+   -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+   -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+   box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+    
+    
+}
+
+@media screen and (max-width: 1240px) {
+    .navbar {
+      font-size:90%;
+    }
+  }
+
+  @media screen and (max-width: 1130px) {
+    .navbar {
+      font-size:80%;
+
+    }
+    .navbar li{
+        padding-left:20px;
+    }
+  }
+
+.navbar li{
+    padding-left:30px;
+}
+
+.navbar li:last-child{
+    padding-right:250px;
+}
 
   nav a{
       padding-left:2rem;
@@ -143,7 +171,7 @@ body{
   }
 
   .blurBackground{     
-      margin-top:125px;   
+      margin-top:100px;   
       text-align:center;
       padding:40px;
       width:500px;
@@ -269,10 +297,17 @@ body{
     color: #c8c7c7;
  }
 
+ @media screen and (max-width: 992px) {
+    .aboutAndInfosRight{
+        padding-left:12px;
+        padding-top:12px;
+    }
+  }
+
  /* start 3rd Section - Education */
 
  .educationSections{
-    padding: 60px 0px;
+    padding: 0px 0px 60px 0px;
     background-color:white;
  }
 
@@ -290,7 +325,7 @@ body{
  }
 
  .educationRight{
-    text-align:center;
+    text-align:left;
     font-size:1000%;
  }
 
@@ -301,6 +336,18 @@ body{
     margin: 0 auto;   
 }
 
+@media screen and (max-width: 992px) {
+    .educationRight{
+        text-align:center;
+        font-size:700%;
+
+    }
+
+    .educationLeft{
+        padding-right:10px;
+    }
+}
+  
 
 
  /*start 4th Section - Workexperience */
@@ -315,18 +362,20 @@ body{
 
  .timelineSectionHeader{
      text-align:center;
-     padding-top: 100px;
+     padding-top: 50px;
      padding-bottom: 40px;
  }
 
+ 
+ body {
+    background-color: #f3f3f3;
+    font-family: Helvetica, sans-serif;
+  }
  * {
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #f3f3f3;
-    font-family: Helvetica, sans-serif;
-  }
+ 
   
   /* The actual timeline (the vertical ruler) */
   .timeline {
@@ -427,16 +476,60 @@ body{
     box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
   }
 
-     .timeline button{
-      padding: 5px 30px;      
-  } 
 
+
+  
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 992px) {
+    /* Place the timelime to the left */
+      .timeline::after {
+        left: 31px;
+      }
+
+      .timelineSectionHeader{
+          padding-top:50px;
+      }
+
+      .timelines.left{
+          width:100%;
+
+      }
+
+      .left::before, .right::before{
+          content:none;
+      }
+    
+    /* Full-width containers */
+    #work {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline::after{
+        display:none;
+    }
+    
+    /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+        content:none;
+      }
+    
+    /* Make all right containers behave like the left ones */
+      .right {
+        width:100%;
+        left:0%;
+      }
+    }
+  
 
 /* skillsection */
 
 .skillSection{
     background-color: white;
     padding: 50px 0px; 
+    padding-top:80px;
      
 }
 
@@ -460,14 +553,32 @@ font-size: 200%;
      font-size:smaller;
  }
 
- .col-lg-7{
+ @media screen and (max-width: 1390px) {
+    
+    .skillSection .container i{
+        font-size: 110%;
+         }
+          #sql{
+             font-size: 60%;
+         }
+
+         #php{
+             font-size:80%
+         }
+
+         .skillSection p{
+             font-size:80%;
+         }
+    }
+
+ .col-7{
      padding:0px;
  }
 
  /* reviewSection */
  .reviewsSection{
     background: white;
-    padding-top: 100px;
+    padding-top: 50px;
     text-align:center;    
  }
 
@@ -494,7 +605,9 @@ font-size: 200%;
      height:421px
  }
 
-
+ .reviewsSection .col-md-4 .card{
+    width:18rem;
+}
 
  
  .reviewsSection img{
@@ -506,10 +619,32 @@ font-size: 200%;
      margin: 20px auto;
  }
 
+ @media screen and (max-width: 992px) {
+    
+    .reviewsSection .col-md-4 .card{
+        width:14rem;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    
+    .reviewsSection .col-md-4 .card{
+        width:90%;
+        margin-bottom:20px;
+    }
+    .reviewsSection img{
+        border: 1px solid darkgrey;
+        border-radius:50%;
+        width:50%;
+        height: auto;
+        margin: 20px auto;
+    }
+ }
+
 
  .hobbiesSection{
     background: white;
-    padding: 50px 0px;
+    padding: 10px 0px 50px 0px;
     text-align:center;
 
  }
@@ -553,3 +688,11 @@ font-size: 200%;
 
  }
 
+ @media screen and (max-width: 330px) {
+    
+    .socialMediaInner li{
+        font-size:150%;
+        padding:10px;
+    }
+
+ }

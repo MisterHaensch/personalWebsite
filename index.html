@@ -150,25 +150,47 @@
 
 
     <!-- chatbot end -->
-
-
-    <section class="container-fluid firstSection">
-        <div class="header">
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#aboutme">About me</a>
-                <a href="#education">Education</a>
-                <a href="#work">Work</a>
-                <a href="#skills">Skills</a>
-                <a href="#references">References</a>
-                <a href="#hobbies">Hobbies</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <nav class="navbar sticky-top navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-xl-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link "  href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#references">References</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#hobbies">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "  href="#contact">Contact</a>
+              </li>
+                           
         </div>
+    </nav>
 
 
+    <section class="container-fluid firstSection" id="home">      
 
-        <div class="row welcome" id="home">
+
+        <div class="row welcome" >
             <div class="blurBackground">
                 <div>
                     <img class="thisIsMe" src="img/profile.png" alt="thisIsMe">
@@ -176,14 +198,10 @@
                 <div class="col-sm">
                     <div class="welcomeLeft">
                         <h3>Hi, <br> I'm Martin</h3>
-<<<<<<< HEAD
                         <p>German Engineer & Software Developer <br>
                             Based in the SF Bay Area
                         </p>
                         
-=======
-                        <p>Engineer & Software Developer from Germany</p>
->>>>>>> b01498db5192b2ebbf22c7e21bf7eb50a6916aad
 
                         <button type="button" class="btn btn-light"><a href="mailto:hireme@mhansch.com">Contact me </a></button>
                         <button type="button" class="btn btn-light"><a href="martinhaenschcv.pdf" target="_blank" download>Download CV</a></button>
@@ -261,12 +279,12 @@
 
     </section>
 
-    <section class="educationSections">
-        <div class="container ">
+    <section class="educationSections" id="education">
+        <div class="container" >
             <div class="row educations">
-                <div class="col-6 educationLeft">
+                <div class="col-md col-lg-8 educationLeft">
                     <div>
-                        <h2 id="education">Education</h2>
+                        <h2 >Education</h2>
                         <div class="row">
                             <div class="col-4">
                                 <b>Time:</b>
@@ -309,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 educationRight">
+                <div class="col-md col-lg-4 educationRight">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
             </div>
@@ -319,8 +337,8 @@
 
     <section>
 
-        <div class="container">
-            <div class="timelineSection" id="work">
+        <div class="container" id="work">
+            <div class="timelineSection" >
                 <div class="timelineSectionHeader">
                     <h2 id="workexperience">Work<b>experience</b></h2>
                 </div>
@@ -441,173 +459,173 @@
     </section>
 
 
-    <section class="skillSection">
+    <section class="skillSection" id="skills">
 
         <div class="container">
-            <h2 id="skills">Skills</h2>
+            <h2 >Skills</h2>
             <br>
             <div class="row">
                 
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg  col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1" id="php">
+                        <div class="col-1" id="php">
                             <i class="fab fa-php"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>PHP</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> > 2 years</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg  col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-html5"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>HTML5</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"> > 2 years</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg  col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-bootstrap"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>Bootstrap</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> > 2 years</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg   col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-python"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>Python</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">1 year</div>
                         </div>
                     </div>
                 </div>
                
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg   col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-css3-alt"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>CSS3</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="90">2 years</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg   col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-vuejs"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>Vue.js</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">1 year</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg   col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-js-square"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>JavaScript</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">2 years</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg   col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fas fa-database"></i>
                         </div>
-                        <div class="col-lg-3" id="sql">
+                        <div class="col-3" id="sql">
                             <p>SQL / NoSQL</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> > 2 years</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg  col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-laravel"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>Laravel</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> < 1 year</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-node-js"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>Node.js</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> < 1 year</div>
                         </div>
                     </div>
                 </div>                
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-git"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>git</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">1 year</div>
                         </div>
                     </div>
                 </div>           
-                <div class="col-sm  col-lg-4">
+                <div class="col-lg col-lg-4">
                     <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-1">
                             <i class="fab fa-react"></i>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-3">
                             <p>React (in Progress..)</p>
                         </div>
-                        <div class="col-lg-7 progress">
+                        <div class="col-7 progress">
                             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"> < 0.5 years </div>
                         </div>
                     </div>
@@ -619,17 +637,13 @@
 
     <section class="reviewsSection">
 
-        <div class="container">
-<<<<<<< HEAD
-            <h2 id="references">References</h2>
+        <div class="container" id="references">
+            <h2 >References</h2>
             <br>
-=======
-            <h2 id="references">Reviews</h2>
->>>>>>> b01498db5192b2ebbf22c7e21bf7eb50a6916aad
             <h4>This is what people say about Martin:</h4>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card">
                         <img class="card-img-top" src="img/mutti.jpeg" alt="picture of mother">
                         <div class="card-body">
                           <h5 class="card-title"><strong>Mother</strong></h5>
@@ -638,30 +652,20 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card">
                         <img class="card-img-top" src="img/wife.jpeg" alt="Picture of Wife">
                         <div class="card-body">
-<<<<<<< HEAD
                           <h5 class="card-title"><strong>Wife</strong></h5>
                           <p class="card-text"><i> "Martin is a talented and dedicated engineer. I wish he would take care of the house work only half as well as he takes care of his job projects."  </i></p>
-=======
-                          <h5 class="card-title"><strong>Best friend</strong></h5>
-                          <p class="card-text"><i>"Now? Martin, is this really necessary at 2 am in the morning?"</i> </p>                        
->>>>>>> b01498db5192b2ebbf22c7e21bf7eb50a6916aad
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card">
                         <img class="card-img-top" src="img/bestfriend.jpeg" alt="Picture of best friend">
                         <div class="card-body">
-<<<<<<< HEAD
                           <h5 class="card-title"><strong>Best friend</strong></h5>
                           <p class="card-text"><i>"Now? Martin, is this really necessary at 2 am in the morning?"</i> </p>                        
-=======
-                          <h5 class="card-title"><strong>Wife</strong></h5>
-                          <p class="card-text"><i> "Why are you still on the laptop? Dinner is in 5 minutes! Did you take out the trash? Martin? Maaartin...MARTIN!" </i></p>
->>>>>>> b01498db5192b2ebbf22c7e21bf7eb50a6916aad
                         </div>
                     </div>
                 </div>
@@ -675,9 +679,9 @@
 
 
 
-    <section class="hobbiesSection">
+    <section class="hobbiesSection" id="hobbies">
         <div class="container">
-            <h2 id="hobbies">Hobbies</h2>
+            <h2 >Hobbies</h2>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -730,9 +734,9 @@
 
     </section>
 
-    <section class="contactSection">
+    <section class="contactSection" id="contact">
         <div class="container">
-            <h2 id="contact" >Contact</h2>
+            <h2  >Contact</h2>
             <div class="contact">
                 <div class="socialMedia">
                     <ul>
