@@ -1,698 +1,551 @@
 body{
-    
-    color:#48494b;
+	color:#48494b;
 }
 /* background in the beginning */
-.firstSection {    
-    /*  background-image: -webkit-linear-gradient(20deg, #fcfcfc 50%, #c5c4c9 50%); height: auto;   */
-   background-image: url("../img/backgroundHeader2.jpg");
-   background-size: cover;
-   background-position: 50% 33%;
-    height: 700px; 
-  }
-
-  .chatIcon{
-    position:fixed;
-    right:30px;
-    bottom: 0;
-    font-size:70px;
-    color: rgb(163, 163, 163);
-    cursor: pointer;
-    z-index:1000;
-    border-radius: 50%;
-    
-    
-    
-  }
-
-  #hidden{
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-        animation-name: bounce-4;
-        animation-timing-function: ease;
-    }
-    @keyframes bounce-4 {
-        0%   { transform: scale(1,1)    translateY(0); }
-        10%  { transform: scale(1.1,.9) translateY(0); }
-        30%  { transform: scale(.9,1.1) translateY(-50px); }
-        50%  { transform: scale(1,1)    translateY(0); }
-        57%  { transform: scale(1,1)    translateY(-7px); }
-        64%  { transform: scale(1,1)    translateY(0); }
-        100% { transform: scale(1,1)    translateY(0); }
-    }
-	
-
-
-  .chatBox{
-      position: fixed;
-      right: 20px;
-      bottom: 100px;
-      width: 400px;
-      
-      background: #dedede;
-      z-index: 1000;
-      transition: all 0.3s ease-out;
-      transform:scaleX(0);
-  }
-  .chatBox.active{
-      transform: scaleX(1);
-  }
-
-  .conv-form-wrapper textarea{
-    height: 30px;
-    overflow: hidden;
-    resize: none;
-  }
-
-
-  .hidden{
-      display: none !important;
-  }
-
-  #messages{
-      padding:20px;
-  }
-
+.firstSection {
+	/* background-image: -webkit-linear-gradient(20deg, #fcfcfc 50%, #c5c4c9 50%);
+	height: auto;
+	*/
+	background-image: url("../img/backgroundHeader2.jpg");
+	background-size: cover;
+	background-position: 50% 33%;
+	height: 700px;
+}
+.chatIcon{
+	position:fixed;
+	right:30px;
+	bottom: 0;
+	font-size:70px;
+	color: rgb(163, 163, 163);
+	cursor: pointer;
+	z-index:1000;
+	border-radius: 50%;
+}
+#hidden{
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: bounce-4;
+	animation-timing-function: ease;
+}
+@keyframes bounce-4 {
+	0% {
+		transform: scale(1,1) translateY(0);
+	}
+	10% {
+		transform: scale(1.1,.9) translateY(0);
+	}
+	30% {
+		transform: scale(.9,1.1) translateY(-50px);
+	}
+	50% {
+		transform: scale(1,1) translateY(0);
+	}
+	57% {
+		transform: scale(1,1) translateY(-7px);
+	}
+	64% {
+		transform: scale(1,1) translateY(0);
+	}
+	100% {
+		transform: scale(1,1) translateY(0);
+	}
+}
+.chatBox{
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	width: 400px;
+	background: #dedede;
+	z-index: 1000;
+	transition: all 0.3s ease-out;
+	transform:scaleX(0);
+}
+.chatBox.active{
+	transform: scaleX(1);
+}
+.conv-form-wrapper textarea{
+	height: 30px;
+	overflow: hidden;
+	resize: none;
+}
+.hidden{
+	display: none !important;
+}
+#messages{
+	padding:20px;
+}
 /* Navigation */
-
-
-
-
-/*   .fixed {
-    position:fixed;
-    z-index:1000;
-} */
-
+/* .fixed {
+	position:fixed;
+	z-index:1000;
+}
+*/
 .navbar {
-    font-size:120%;
-    color: darkgrey !important;
-   /*  background-color: rgba(255,255,255,0.7) !important; */
-   -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-   -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-   box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    
-    
+	
+	color: darkgrey !important;
+	/* background-color: rgba(255,255,255,0.7) !important;
+	*/
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
 }
-
 @media screen and (max-width: 1240px) {
-    .navbar {
-      font-size:90%;
-    }
-  }
-
-  @media screen and (max-width: 1130px) {
-    .navbar {
-      font-size:80%;
-
-    }
-    .navbar li{
-        padding-left:20px;
-    }
-  }
-
+	.navbar {
+		font-size:90%;
+	}
+}
+@media screen and (max-width: 1130px) {
+	.navbar {
+		font-size:80%;
+	}
+	.navbar li{
+		padding-left:20px;
+	}
+}
 .navbar li{
-    padding-left:30px;
+	padding-left:30px;
 }
-
 .navbar li:last-child{
-    padding-right:250px;
+	padding-right:250px;
 }
-
-  nav a{
-      padding-left:2rem;
-      text-decoration:none;
-      color:white;
-      font-weight: bolder;
-      transition: color 0.3s;
-  }
-
-  a{
-      color:black;
-      text-decoration: none;
-
-  }
-
-  a:visited{
-      text-decoration:none;
-  }
-
-  a:hover{
-      color:black;
-  }
-
-  nav a:visited{
-      text-decoration: none;
-  }
-
-  nav a:hover{
-    color:white;
-    text-decoration: underline;
-  }
-
- /* start 1st Section - welcome  */ 
-  .welcome{
-      
-      text-align:center;
-  }
-
-  .welcomeLeft{
-      margin-top: 20px;
-    color:white;
-  }
-
-  .welcomeLeft h1{
-      padding-bottom: 1rem;
-  }
-
-  .welcomeLeft button{
-      margin-top:1.5rem;
-      margin-left: 10px;
-      width:150px;
-  }
-
-  .blurBackground{     
-      margin-top:100px;   
-      text-align:center;
-      padding:40px;
-      width:500px;
-      margin-left:auto;
-      margin-right:auto;
-      background-color:rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      -webkit-box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
-      -moz-box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
-      box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);     
-      
-  }
-
-  .thisIsMe{
-    height: 200px;
-    width: auto;
-    background-color:rgba(0,0,0,0.4);
-    border-radius: 50%;
-    border: 2px solid grey;
-    filter:blur(0px)   
- }
-
-
-
-
-  .socialMedia li{
-      
-      font-size: 200%;
-      list-style:none;      
-      
-      
-  }
-
-  .socialMedia a{
-    color: white;
-      
-    
-    
+nav a{
+	padding-left:2rem;
+	text-decoration:none;
+	color:white;
+	font-weight: bolder;
+	transition: color 0.3s;
 }
-
+a{
+	color:black;
+	text-decoration: none;
+}
+a:visited{
+	text-decoration:none;
+}
+a:hover{
+	color:black;
+}
+nav a:visited{
+	text-decoration: none;
+}
+nav a:hover{
+	color:white;
+	text-decoration: underline;
+}
+/* start 1st Section - welcome */
+.welcome{
+	text-align:center;
+}
+.welcomeLeft{
+	margin-top: 20px;
+	color:white;
+}
+.welcomeLeft h1{
+	padding-bottom: 1rem;
+}
+.welcomeLeft button{
+	margin-top:1.5rem;
+	margin-left: 10px;
+	width:150px;
+}
+.blurBackground{
+	margin-top:100px;
+	text-align:center;
+	padding:40px;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	-webkit-box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
+	box-shadow: 2px 4px 14px 0px rgba(0,0,0,1);
+}
+.thisIsMe{
+	height: 200px;
+	width: auto;
+	background-color:rgba(0,0,0,0.4);
+	border-radius: 50%;
+	border: 2px solid grey;
+	filter:blur(0px)
+}
+.socialMedia li{
+	font-size: 200%;
+	list-style:none;
+}
+.socialMedia a{
+	color: white;
+}
 .fa-envelope{
-        transition: all 0.5s;
-        transition-property: font-size;
-    }
-
-    .fa-envelope:hover{
-        font-size:120%;
-      }
-
+	transition: all 0.5s;
+	transition-property: font-size;
+}
+.fa-envelope:hover{
+	font-size:120%;
+}
 .fa-facebook{
-    transition: all 0.5s;
-    transition-property: color, font-size;
-    }
-
-    
-
-
-  
+	transition: all 0.5s;
+	transition-property: color, font-size;
+}
 .fa-facebook:hover{
-    color: #4267B2;
-    font-size:120%;
-  }
-
-
+	color: #4267B2;
+	font-size:120%;
+}
 .fa-instagram{
-    transition: all 0.5s;
-    transition-property: color, font-size;
+	transition: all 0.5s;
+	transition-property: color, font-size;
 }
-
 .fa-instagram:hover{
-    color: #C13584;
-    font-size: 120%;
+	color: #C13584;
+	font-size: 120%;
 }
-
 .fa-linkedin-in{
-    transition: all 0.5s;
-    transition-property: color, font-size;
- }
-
+	transition: all 0.5s;
+	transition-property: color, font-size;
+}
 .fa-linkedin-in:hover{
-    color:#2867B2;
-    font-size: 120%;
+	color:#2867B2;
+	font-size: 120%;
 }
-
-
- /* start 2nd Section - about me */
- 
- .aboutAndInfosSection{
-     padding: 60px 0px;
-     background-color:white;
+/* start 2nd Section - about me */
+.aboutAndInfosSection{
+	padding: 60px 0px;
+	background-color:white;
 }
-
- .aboutAndInfosSection .container{
-    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    padding: 2rem;
-    border-radius:10px;
+.aboutAndInfosSection .container{
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	padding: 2rem;
+	border-radius:10px;
 }
-
- .aboutAndInfosLeft{
-     padding-right:50px;
-     line-height: 1.8rem;
- }
-
- .aboutAndInfosRight{
-     line-height: 2rem;
-     padding-left:50px;
- }
-
+.aboutAndInfosLeft{
+	padding-right:50px;
+	line-height: 1.8rem;
+}
+.aboutAndInfosRight{
+	line-height: 2rem;
+	padding-left:50px;
+}
 .aboutMeSection{
-    padding:100px;
-    padding-bottom: 40px;
-    background-color:#f3f3f3;
-    margin: 0 auto;
+	padding:100px;
+	padding-bottom: 40px;
+	background-color:#f3f3f3;
+	margin: 0 auto;
 }
-
- .aboutMeLeft{
-    margin-top:-60px;
-    text-align:center;    
-    padding-top:0px;
-    font-size: 1250%;
-    color: #c8c7c7;
- }
-
- @media screen and (max-width: 992px) {
-    .aboutAndInfosRight{
-        padding-left:12px;
-        padding-top:12px;
-    }
-  }
-
- /* start 3rd Section - Education */
-
- .educationSections{
-    padding: 0px 0px 60px 0px;
-    background-color:white;
- }
-
- .educationSections .container{
-    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    padding: 2rem;
-    border-radius:10px;    
- }
-
- .educationLeft{
-     padding-right:50px;
-     line-height: 1.8rem;
- }
-
- .educationRight{
-    text-align:left;
-    font-size:1000%;
- }
-
- .educationSection{
-    padding:100px;
-    padding-bottom: 40px;
-    background-color:#fcfcfc;
-    margin: 0 auto;   
+.aboutMeLeft{
+	margin-top:-60px;
+	text-align:center;
+	padding-top:0px;
+	font-size: 1250%;
+	color: #c8c7c7;
 }
-
 @media screen and (max-width: 992px) {
-    .educationRight{
-        text-align:center;
-        font-size:700%;
-
-    }
-
-    .educationLeft{
-        padding-right:10px;
-    }
+	.aboutAndInfosRight{
+		padding-left:12px;
+		padding-top:12px;
+	}
 }
-  
-
-
- /*start 4th Section - Workexperience */
-
- .content li{
-     padding-top:10px;
- }
-
- .timelineSection{
-     padding-bottom:80px;
- }
-
- .timelineSectionHeader{
-     text-align:center;
-     padding-top: 50px;
-     padding-bottom: 40px;
- }
-
- 
- body {
-    background-color: #f3f3f3;
-    font-family: Helvetica, sans-serif;
-  }
- * {
-    box-sizing: border-box;
-  }
-  
- 
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .timelines {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .timelines::after {
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    right: -13px;
-    background-color: white;    
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
+/* start 3rd Section - Education */
+.educationSections{
+	padding: 0px 0px 60px 0px;
+	background-color:white;
+}
+.educationSections .container{
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	padding: 2rem;
+	border-radius:10px;
+}
+.educationLeft{
+	padding-right:50px;
+	line-height: 1.8rem;
+}
+.educationRight{
+	text-align:left;
+	font-size:1000%;
+}
+.educationSection{
+	padding:100px;
+	padding-bottom: 40px;
+	background-color:#fcfcfc;
+	margin: 0 auto;
+}
+@media screen and (max-width: 992px) {
+	.educationRight{
+		text-align:center;
+		font-size:700%;
+	}
+	.educationLeft{
+		padding-right:10px;
+	}
+}
+/*start 4th Section - Workexperience */
+.content li{
+	padding-top:10px;
+}
+.timelineSection{
+	padding-bottom:80px;
+}
+.timelineSectionHeader{
+	text-align:center;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+body {
+	background-color: #f3f3f3;
+	font-family: Helvetica, sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: white;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+/* Container around content */
+.timelines {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+/* The circles on the timeline */
+.timelines::after {
+	content: '';
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	right: -13px;
+	background-color: white;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+/* Place the container to the left */
+.left {
+	left: 0;
+}
+/* Place the container to the right */
+.right {
+	left: 50%;
+}
+/* Add arrows to the left container (pointing right) */
 .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-
-  
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -13px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    transition: all 1s;
-    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-  }
-
-
-
-  
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	right: 30px;
+	border: medium solid white;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent white;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+	left: -13px;
+}
+/* The actual content */
+.content {
+	padding: 20px 30px;
+	background-color: white;
+	position: relative;
+	border-radius: 6px;
+	transition: all 1s;
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+}
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 992px) {
-    /* Place the timelime to the left */
-      .timeline::after {
-        left: 31px;
-      }
-
-      .timelineSectionHeader{
-          padding-top:50px;
-      }
-
-      .timelines.left{
-          width:100%;
-
-      }
-
-      .left::before, .right::before{
-          content:none;
-      }
-    
-    /* Full-width containers */
-    #work {
-        width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-      }
-    
-    /* Make sure that all arrows are pointing leftwards */
-    .timeline::after{
-        display:none;
-    }
-    
-    /* Make sure all circles are at the same spot */
-      .left::after, .right::after {
-        content:none;
-      }
-    
-    /* Make all right containers behave like the left ones */
-      .right {
-        width:100%;
-        left:0%;
-      }
-    }
-  
-
+	/* Place the timelime to the left */
+	.timeline::after {
+		left: 31px;
+	}
+	.timelineSectionHeader{
+		padding-top:50px;
+	}
+	.timelines.left{
+		width:100%;
+	}
+	.left::before, .right::before{
+		content:none;
+	}
+	/* Full-width containers */
+	#work {
+		width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	/* Make sure that all arrows are pointing leftwards */
+	.timeline::after{
+		display:none;
+	}
+	/* Make sure all circles are at the same spot */
+	.left::after, .right::after {
+		content:none;
+	}
+	/* Make all right containers behave like the left ones */
+	.right {
+		width:100%;
+		left:0%;
+	}
+}
 /* skillsection */
-
 .skillSection{
-    background-color: white;
-    padding: 50px 0px; 
-    padding-top:80px;
-     
+	background-color: white;
+	padding: 50px 0px;
+	padding-top:80px;
 }
-
 .skillSection .container{
-    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    padding: 2rem;
-    border-radius:10px;
-    
- }
-
- .skillSection .container i{
-font-size: 200%;
- }
-
- #php {
-     font-size: 75%;
- }
- #sql{
-     font-size:smaller;
- }
-
- @media screen and (max-width: 1390px) {
-    
-    .skillSection .container i{
-        font-size: 110%;
-         }
-          #sql{
-             font-size: 60%;
-         }
-
-         #php{
-             font-size:80%
-         }
-
-         .skillSection p{
-             font-size:80%;
-         }
-    }
-
- .col-7{
-     padding:0px;
- }
-
- /* reviewSection */
- .reviewsSection{
-    background: white;
-    padding-top: 50px;
-    text-align:center;    
- }
-
- .reviewsSection h4{
-   
-    text-align:left;    
- }
-
- .reviewsSection h2{
-     text-align:left;
- }
-
- .reviewsSection .row{
-    margin-top:40px;
-    padding-bottom: 80px;
- }
-
- .reviewsSection .card{
-    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-     margin: auto;
-     border-radius:10px;
-     height:421px
- }
-
- .reviewsSection .col-md-4 .card{
-    width:18rem;
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	padding: 2rem;
+	border-radius:10px;
 }
-
- 
- .reviewsSection img{
-     
-     border: 1px solid darkgrey;
-     border-radius:50%;
-     width:70%;
-     height: auto;
-     margin: 20px auto;
- }
-
- @media screen and (max-width: 992px) {
-    
-    .reviewsSection .col-md-4 .card{
-        width:14rem;
-    }
- }
-
- @media screen and (max-width: 768px) {
-    
-    .reviewsSection .col-md-4 .card{
-        width:90%;
-        margin-bottom:20px;
-    }
-    .reviewsSection img{
-        border: 1px solid darkgrey;
-        border-radius:50%;
-        width:50%;
-        height: auto;
-        margin: 20px auto;
-    }
- }
-
-
- .hobbiesSection{
-    background: white;
-    padding: 10px 0px 50px 0px;
-    text-align:center;
-
- }
-
- #hobbies{
-    text-align:left;
-    margin-bottom:30px;
-    
- }
-
- .hobbiesSection .container{
-    -webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    -moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
-    padding: 2rem;
-    border-radius:10px;
- }
-
- .contactSection{
-    color:white;
-    padding:50px 0px;
-    background: rgb(255,125,182);
-    background: radial-gradient(circle, rgba(255,125,182,1) 0%, rgba(148,187,233,1) 100%);
- }
-
- .contactSection h2{
-    text-align:center;
-    
-    
- }
-
- .socialMediaInner{
-    margin-top:40px;
-     text-align:center;
- }
-
-
- .contactSection li{
-     display:inline;
-     padding: 20px;
-
- }
-
- @media screen and (max-width: 330px) {
-    
-    .socialMediaInner li{
-        font-size:150%;
-        padding:10px;
-    }
-
- }
+.skillSection .container i{
+	font-size: 200%;
+}
+#php {
+	font-size: 75%;
+}
+#sql{
+	font-size:smaller;
+}
+@media screen and (max-width: 1390px) {
+	.skillSection .container i{
+		font-size: 110%;
+	}
+	#sql{
+		font-size: 60%;
+	}
+	#php{
+		font-size:80%
+}
+	.skillSection p{
+		font-size:80%;
+	}
+}
+.col-7{
+	padding:0px;
+}
+/* reviewSection */
+.reviewsSection{
+	background: white;
+	padding-top: 50px;
+	text-align:center;
+}
+.reviewsSection h4{
+	text-align:left;
+}
+.reviewsSection h2{
+	text-align:left;
+}
+.reviewsSection .row{
+	margin-top:40px;
+	padding-bottom: 80px;
+}
+.reviewsSection .card{
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	margin: auto;
+	border-radius:10px;
+	height:421px
+}
+.reviewsSection .col-md-4 .card{
+	width:90%;
+}
+.reviewsSection img{
+	border: 1px solid darkgrey;
+	border-radius:50%;
+	width:60%;
+	height: auto;
+	margin: 20px auto;
+}
+@media screen and (max-width: 992px) {
+	.reviewsSection .col-md-4 .card{
+		width:14rem;
+	}
+}
+@media screen and (max-width: 768px) {
+	.reviewsSection .col-md-4 .card{
+		width:90%;
+		margin-bottom:20px;
+	}
+	.reviewsSection img{
+		border: 1px solid darkgrey;
+		border-radius:50%;
+		width:50%;
+		height: auto;
+		margin: 20px auto;
+	}
+}
+.hobbiesSection{
+	background: white;
+	padding: 10px 0px 70px 0px;
+	text-align:center;
+}
+#hobbies{
+	text-align:left;
+}
+.hobbiesSection .container{
+	-webkit-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	-moz-box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	box-shadow: 8px 4px 14px 0px rgba(168,168,168,1);
+	padding: 2rem;
+	border-radius:10px;
+}
+.contactSection{
+	color:white;
+	padding:50px 0px;
+	background: rgb(255,125,182);
+	background: radial-gradient(circle, rgba(255,125,182,1) 0%, rgba(148,187,233,1) 100%);
+}
+.contactSection h2{
+	text-align:center;
+}
+.socialMediaInner{
+	margin-top:40px;
+	text-align:center;
+}
+.contactSection li{
+	display:inline;
+	padding: 20px;
+}
+@media screen and (max-width: 330px) {
+	.socialMediaInner li{
+		font-size:150%;
+		padding:10px;
+	}
+}
